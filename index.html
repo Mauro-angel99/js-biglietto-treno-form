@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container p-5">
+            <h2 class="text-center m-5">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <div class="row d-flex justify-content-between m-5">
+                <div class="col-3 d-flex flex-column text-center">
+                    <h5>Nome Cogniome</h5>
+                    <input type="text" id="input-name" value="">
+                </div>
+                <div class="col-3 d-flex flex-column text-center">
+                    <h5>Km da percorrere</h5>
+                    <input type="number" id="input-km">
+                </div>
+                <div class="col-3 d-flex flex-column text-center">
+                    <h5>Fascia d'età</h5>
+                    <select name="" id="age">
+                        <option value="17">minorenne</option>
+                        <option value="#">adulto</option>
+                        <option value="66">over 65</option>
+                    </select>
+                </div>
+                <div class="col-2 offset-5 d-flex justify-content-between mt-5">
+                    <button id="button">Genera</button>
+                    <button>Annulla</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="text-center mb-5">IL TUO BIGLIETTO</h2>
+            <div class="row">
+                <div class="col d-flex flex-column justify-content-between">
+                    <h4>DETTAGLIO PASSEGGERI</h4>
+                    <h4>NOME PASSEGGERO</h4>
+                    <p id="name"></p>
+                </div>
+                <div class="col d-flex flex-column justify-content-between">
+                    <h5>Offerta</h5>
+                    <p id="discount"></p>
+                </div>
+                <div class="col d-flex flex-column justify-content-between">
+                    <h5>Carrozza</h5>
+                    <p id="carriage"></p>
+                </div>
+                <div class="col d-flex flex-column justify-content-between">
+                    <h5>Codice CP</h5>
+                    <p id="code"></p>
+                </div>
+                <div class="col d-flex flex-column justify-content-between">
+                    <h5>Costo biglietto</h5>
+                    <p id="price"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
